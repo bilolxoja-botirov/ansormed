@@ -1,18 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@font-face {
+    font-family: Open Sans Condensed;
+    src:url("./fonts/OpenSansCondensedBold.woff");
+}
+@font-face {
+    font-family: Open Sans;
+    font-weight: 700;
+    src:url("./fonts/opensanscyrilliclatin700.woff");
+}
+@font-face {
+    font-family: Open Sans;
+    font-weight: 400;
+    src:url("./fonts/opensanscyrilliclatinregular.woff");
+}
 body{
     margin: 0;
     padding: 0;
 }
 .container{
     width: 100%;
-    max-width: 1240px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid;
     padding: 25px 0;
 }
 .links a{
@@ -26,13 +38,17 @@ body{
     color: #222222;
     text-decoration: none;
     margin-right: 35px;
+    transition: color 150ms ease;
+}
+.links a:hover{
+    color: #DE2E54;
 }
 .login button{
     background: #DE2E54;
-    border: 2px solid #DE2E54;
+    border: 3px solid #DE2E54;
     padding: 12px 24px;
     border-radius: 8px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Condensed';
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -40,4 +56,183 @@ body{
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: background 150ms ease, color 150ms ease, opacity 150ms ease;
+    cursor: pointer;
+}
+.login button:hover{
+    background: transparent;
+    color: #DE2E54;
+}
+.login button:active{
+    background: #DE2E54;
+    color: white;
+    opacity: 0.6;
+}
+.first{
+    background: #0eb4c1;
+}
+.banner{
+    display: flex;
+}
+.banner-text{
+    width: 40%;
+    padding: 120px 0;
+}
+.banner-img{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-text h1{
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.banner-text p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+.login2 button{
+    background: #DE2E54;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: background 150ms ease;
+    cursor: pointer;
+}
+.login2 button:hover{
+    background: rgba(222, 46, 84, 0.8);
+}
+.login2 button:active{
+    background: rgba(222, 46, 84, 0.6);
+}
+.services h1{
+    text-align: center;
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    color: #000000;
+}
+.box{
+    display: flex;
+    padding: 0 118px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+.box img {
+    margin-right: 64px;
+}
+.s-text h2{
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #222222;
+}
+.s-text p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #444444;
+}
+.services .login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.second{
+    margin-bottom: 120px;
+}
+.last{
+    background: #0EB4C1;
+    padding: 64px 0;
+    text-align: center;
+}
+.last h1{
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    background: transparent;
+    padding: 12px 24px;
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: background 150ms ease, color 150ms ease, border 150ms ease, opacity 150ms ease;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #DE2E54;
+    border: 2px solid #DE2E54;
+    color: white;
+}
+.btn:active{
+    opacity: 0.6;
+}
+.btn:first-child{
+    margin-right: 40px;
+}
+footer{
+    background: #222222;
+    padding: 24px 0;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links2 a{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 32px;
+    transition: color 150ms ease, opacity 150ms ease;
+}
+.links2 a:hover{
+    color: #DE2E54;
+}
+.links2 a:active{
+    opacity: 0.6;
 }
