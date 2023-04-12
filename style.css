@@ -38,10 +38,14 @@ body{
     color: #222222;
     text-decoration: none;
     margin-right: 35px;
-    transition: color 150ms ease;
+    transition: color 150ms ease, opacity 150ms ease;
 }
 .links a:hover{
     color: #DE2E54;
+}
+.links a:active{
+    color: #DE2E54;
+    opacity: 0.6;
 }
 .login button{
     background: #DE2E54;
@@ -121,6 +125,9 @@ body{
 }
 .login2 button:active{
     background: rgba(222, 46, 84, 0.6);
+}
+.services{
+    padding: 120px 0;
 }
 .services h1{
     text-align: center;
