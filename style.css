@@ -27,6 +27,9 @@ body{
     align-items: center;
     padding: 25px 0;
 }
+.logo, .logo2{
+    cursor: pointer;
+}
 .links a{
     font-family: 'Open Sans';
     font-style: normal;
