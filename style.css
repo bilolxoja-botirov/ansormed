@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: Open Sans Condensed;
     src:url("./fonts/OpenSansCondensedBold.woff");
@@ -22,9 +29,15 @@ body{
     margin: 0 auto;
 }
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 25px 0;
 }
 .logo, .logo2{
@@ -41,6 +54,8 @@ body{
     color: #222222;
     text-decoration: none;
     margin-right: 35px;
+    -webkit-transition: color 150ms ease, opacity 150ms ease;
+    -o-transition: color 150ms ease, opacity 150ms ease;
     transition: color 150ms ease, opacity 150ms ease;
 }
 .links a:hover{
@@ -63,6 +78,8 @@ body{
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;
+    -webkit-transition: background 150ms ease, color 150ms ease, opacity 150ms ease;
+    -o-transition: background 150ms ease, color 150ms ease, opacity 150ms ease;
     transition: background 150ms ease, color 150ms ease, opacity 150ms ease;
     cursor: pointer;
 }
@@ -79,6 +96,8 @@ body{
     background: #0eb4c1;
 }
 .banner{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .banner-text{
@@ -87,8 +106,12 @@ body{
 }
 .banner-img{
     width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 .banner-text h1{
     font-family: 'Open Sans Condensed';
@@ -120,6 +143,8 @@ body{
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;
+    -webkit-transition: background 150ms ease;
+    -o-transition: background 150ms ease;
     transition: background 150ms ease;
     cursor: pointer;
 }
@@ -142,10 +167,14 @@ body{
     color: #000000;
 }
 .box{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0 118px;
     margin-bottom: 80px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .box img {
     margin-right: 64px;
@@ -168,8 +197,12 @@ body{
 }
 .services .login{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .second{
     margin-bottom: 120px;
@@ -188,8 +221,12 @@ body{
     color: #FFFFFF;
 }
 .buttons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .btn{
     border: 2px solid #FFFFFF;
@@ -204,6 +241,8 @@ body{
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;
+    -webkit-transition: background 150ms ease, color 150ms ease, border 150ms ease, opacity 150ms ease;
+    -o-transition: background 150ms ease, color 150ms ease, border 150ms ease, opacity 150ms ease;
     transition: background 150ms ease, color 150ms ease, border 150ms ease, opacity 150ms ease;
     cursor: pointer;
 }
@@ -223,9 +262,15 @@ footer{
     padding: 24px 0;
 }
 .footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .links2 a{
     font-family: 'Open Sans';
@@ -238,6 +283,8 @@ footer{
     color: #FFFFFF;
     text-decoration: none;
     margin-left: 32px;
+    -webkit-transition: color 150ms ease, opacity 150ms ease;
+    -o-transition: color 150ms ease, opacity 150ms ease;
     transition: color 150ms ease, opacity 150ms ease;
 }
 .links2 a:hover{
